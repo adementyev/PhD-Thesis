@@ -1,0 +1,46 @@
+\chapter{Challanges and Future work}
+The development of DWT is still in its infancy. There are many challenges and opportunities for future growth, as outlined in this chapter. 
+
+\section{Applications}
+In this thesis, we demonstrated potential applications of DWT technology in medicine, human-computer interactions, and arts/fashion. However, there is still no one application ("killer application") or a niche that completely justifies the robots.  An application that could not be done any other way. In a current state, the DWT can't compete with the well-developed technologies. It is not surprising as we did not develop DWT with a single problem in mind. The main goal of DWT is to demonstrate how we can think of wearables differently, as robotic companions. 
+Unpredictable and fast technological development makes it hard to predict where this work will be in 5-10 years. This is especially difficult for robotics technologies, as robotic technology did not develop as we expected before: we still do not have human-like robots.  A future challenge for this work is to find a killer application. It is also entirely possible that there is no one killer application, and DWT provides a complementary niche in the wearable technologies ecosystem. In any scenario, a long-term real-world deployment will be required to thoroughly asses the demands of this technology. 
+
+Many interesting sensing applications remain to be implemented. We see tremendous potential in using the robots in tomography, which is a 3D reconstruction of tissues based on spatial sensors. It is similar to what is done in MRI and CT scanners. We don't believe that our technology can see as deep as the MRI machines. The depth depends on the energy input to the transducer, and we can't input as much energy into the robot as the stationary scanners. We showed, in the applications section, that we can sense about 5mm under the skin using mechanical testing. In the future, we hope to see deeper inside the body.
+
+For examples, by equipping the robots with bright infrared LED lights and detectors, would enable Diffuse Optical Tomography (DOT)~\cite{boas2001imaging}. In this technique, the light is used to see inside the body, as tissues are almost transparent in near-infrared and infrared light (600-1000um wavelength). As the size and energy consumption of LEDs is not significant, it is possible to add DOT to the robots. 
+
+Another opportunity is using robots for intervention. The robots could be equipped with an epidermal needle to inject medicine into the tissues painlessly. On the surface, the robots could be used to remove hair, shave, or apply lotions to the skin. In the future, we hope to explore such applications. 
+
+In this thesis, we haven't explored much how the robots can cooperate with each other and work in swarms. We showed a few applications where up to three Rovables worked together to move garments. The cooperation could be used to do complex sensing tasks such as using one robot as transmitter and one as a receiver for electrical impedance tomography~\cite{cheney1999electrical}. Also, robots working together will accomplish a job faster. Different robots could be equipped with varying instruments. 
+
+%Chernobyl rover example?
+\section{User testing}
+To understand the applications and the limitations of this technology, more user evaluations are required. For Rovables, limited user testing was done in a previous work~\cite{kao2017exploring}. The testing was mainly concerned with the robot's perception. We plan to test the robots in a normal environment while being worn for 24 hours. 
+For the Epidermal robots, we believe more rigorous testing is required since the robot is targeting mainly medical sensing applications. We have done testing with one participant, and only on a forearm. There is a great variation of skin mechanical properties depending on age, race, gender, and other factors. To fully understand skin locomotion testing on different populations will be required. 
+
+For the application testing: first, the robots would be worn for a short time in defined medical applications and controlled environment. The robots could be used to measure and characterize lumps under the skin, with the ground truth obtained by a CT or MRI scanner. As technology improves, the robots could be tested in a less controlled scenario. They could be worn for 8 hours of sleep. Finally, the robots would be tested on a person going on with their every day. 
+
+\section{Adhesion and Locomotion}
+There is much improvement needed in adhesion and locomotion, especially for the Epidermal robots. 
+
+\textbf{Adhesion} 
+We determined that adhesion to the skin is challenging. We evaluated numerous approaches and determined that suction works the best. Even with the current approach, there is much room for improvement. Current design requires bulky pumps and solenoid pumps. We plan to integrate the pump and the solenoids inside the suction cups. Previous research has demonstrated suction cups that have integrated shape memory actuated membrane instead of using an external pump~\cite{bing2009bio}. Also multiple research projects designed a suction cup that mimics octopus suckers\cite{tramacere2012artificial,tramacere2015octopus,sareh2017anchoring}. Potentially, other adhesion approaches are possible such as using pinching of the skin. 
+We don't have any sensors to find the right spot for adhesion. In the current approach, the robot can only detect if the vacuum seal is made. Using a camera or distance sensor would help the robot climb faster and more reliably. 
+
+
+\textbf{Locomotion}
+We found locomotion using linear servo motors to be less than ideal. The current motors are fragile, and can quickly wear out, as they use a small lead-screw mechanism and plastic gears. We have not found any linear motors with similar size and torque, that can replace the current motors. Each leg of the robot has only two degrees of freedom, making it difficult to attach to curved surfaces. We believe that unconventional actuators are more appropriate and will be explored. In this thesis, we demonstrated a proof-of-concept approach using soft robotics. 
+
+\section{Autonomy}
+We have demonstrated limited autonomous operation for the robots, and we envision that in the future robots will roam around freely. To work in real-life applications, autonomy will have to be improved. The main challenge is to improve the accuracy of onboard localization sensors. As we employ the dead-reckoning approach, the errors accumulate quickly. To improve the error, we would find higher resolution and less noisy motor encoders. Using high-performance IMU would also improve the error. Also, we will explore more sophisticated software algorithms, such as Kalman and particle filters. We also hope to explore how natural landmarks such as scars, moles, and veins could be used to provide absolute position references. Ideally, this would remove the need for attaching the position markers. 
+
+\section{Untethered device}
+The Rovables robot is untethered, but the Epidermal robots still remain tethered. To fully realize their potential robots should be untethered. We found it challenging to make Epidermal robot untethered because this would require making custom mechanical parts: motors, solenoids, and pumps. The off-the-shelf parts are too large and heavy, as the weight of the robot can't exceed 80grams and the center of gravity has to be designed to avoid torque on the skin. 
+
+While the analysis experiments in this thesis have been mostly performed with a tethered version of SkinBot, we believe
+our results are generalizable to potential untethered prototypes.
+
+\section{Other uses}
+The focus of this thesis is the human body. Potentially, the robots could be used with animals and other living creatures as well.  For example, the robot could climb around the elephant to understand it's health. If the animal is in the wild, it is hard to do any health assessment. It is not possible to bring an elephant into an MRI machine or a hospital. As DWT robots are small and light, they could be brought to the animal in the wild.  Animal health is especially relevant, considering how many species are becoming endangered. 
+
+Going beyond living creatures, this robot technology could be used for inspection of hard to reach places. The robot could climb different structures and detect cracks and structural problems. The Rovables could crawl on curtains and air balloons, as well as inside and outside a spaceship. Potentially, the robots could be used in disaster scenarios or war, and reach and measure physiological signals of a person trapped in the rubble. 

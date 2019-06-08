@@ -1,0 +1,121 @@
+\title{Dynamic Wearable Technology: Body Climbing Robots}
+
+\author{Artem Dementyev}
+\prevdegrees{
+	B.S., University of Maryland, College Park (2009) \\
+	M.S., University of Washington (2013)
+}
+					
+% If you wish to list your previous degrees on the cover page, use the 
+% previous degrees command:
+%      \prevdegrees{A.A., Harvard University (1985)}
+% You can use the \\ command to list multiple previous degrees
+%       \prevdegrees{B.S., University of California (1978) \\
+%                    S.M., Massachusetts Institute of Technology (1981)}
+\department{Program in Media Arts and Sciences,}
+\school{School of Architecture and Planning}
+
+% If the thesis is for two degrees simultaneously, list them both
+% separated by \and like this:
+% \degree{Doctor of Philosophy \and Master of Science}
+\degree{Doctor of Philosophy in Media Arts and Sciences}
+
+% As of the 2007-08 academic year, valid degree months are September, 
+% February, or June.  The default is June.
+\degreemonth{June}
+\degreeyear{2019}
+\thesisdate{May 5, 2019}
+
+%% By default, the thesis will be copyrighted to MIT.  If you need to copyright
+%% the thesis to yourself, just specify the `vi' documentclass option.  If for
+%% some reason you want to exactly specify the copyright notice text, you can
+%% use the \copyrightnoticetext command.  
+%\copyrightnoticetext{\copyright IBM, 1990.  Do not open till Xmas.}
+
+% If there is more than one supervisor, use the \supervisor command
+% once for each.
+\supervisor{Joseph Paradiso}{Professor, MIT Media Lab}
+
+% This is the department committee chairman, not the thesis committee
+% chairman.  You should replace this with your Department's Committee
+% Chairman.
+\chairman{Todd Machover}{Academic Head, Program in Media Arts and Sciences}
+
+% Make the titlepage based on the above information.  If you need
+% something special and can't use the standard form, you can specify
+% the exact text of the titlepage yourself.  Put it in a titlepage
+% environment and leave blank lines where you want vertical space.
+% The spaces will be adjusted to fill the entire page.  The dotted
+% lines for the signatures are made with the \signature command.
+\maketitle
+
+% The abstractpage environment sets up everything on the page except
+% the text itself.  The title and other header material are put at the
+% top of the page, and the supervisors are listed at the bottom.  A
+% new page is begun both before and after.  Of course, an abstract may
+% be more than one page itself.  If you need more control over the
+% format of the page, you can use the abstract environment, which puts
+% the word "Abstract" at the beginning and single spaces its text.
+
+%% You can either \input (*not* \include) your abstract file, or you can put
+%% the text of the abstract directly between the \begin{abstractpage} and
+%% \end{abstractpage} commands.
+
+% First copy: start a new page, and save the page number.
+\cleardoublepage
+% Uncomment the next line if you do NOT want a page number on your
+% abstract and acknowledgments pages.
+% \pagestyle{empty}
+\setcounter{savepage}{\thepage}
+\begin{abstractpage}
+This thesis introduces the idea of Dynamic Wearable Technology. A concept of wearable devices as small autonomous robots that can move on and around the human body. The natural world ecosystem has static and dynamic organisms such as trees and animals. In our wearable ecosystem, all our wearable devices are static. By adding complementary robots, we will have a fully functional ecosystem. 
+
+The thesis develops and evaluates two complementary approaches. First, Rovables, a clothing climbing robot, that pinches fabric with magnetic rollers. Second, Epidermal robots that use suction to attach to the skin. The robots contain on-board navigation that uses inertial measurement units and motor encoders to estimate position. 
+
+Dynamic wearable technology has applications in many areas: medicine, human-computer interactions, fashion, and art. We explore several applications in each of those areas. The robots can help to systematically collect health information, such as the mechanical properties of tissues. The robots can potentially provide truly ubiquitous computing and new venues for artistic exploration of relationships between our bodies and our devices. 
+
+
+%Current wearable systems are limited to static devices. This severely limits their functionality as they have limited coverage and require manual manipulation. By taking inspiration from symbiotic relationships in biology and autonomous robots, we envision that wearables devices could move on and around the human body. Freely moving on the skin or the clothing, robots could autonomously monitor health with unlimited spatial resolution. They can scan the body with a microscope for signs of skin cancer or pick up bioelectrical signals, such as an electrocardiogram and do acoustic sensing of the skin mechanical properties. Beyond sensing epidermal robots can do targeted therapy, such as injections and microsurgery.  Dynamic wearables could provide truly ubiquitous computing and new venues for artistic exploration of relationships between our bodies and our devices. 
+
+%To explore this concept, the thesis will demonstrate two complementary approaches: moving on clothing and moving on the skin. We already demonstrated the Rovables, a cloth-climbing robot. The skin-crawling robots, collectively named Epidermal Robots will be developed and evaluated, as the main technical contribution of the thesis.  I will explore how such robot will move and adhere to the skin. Also, the research will explore applications of Epidermal Robotics primarily focusing on medicine, as mobile health sensors. Additionally, applications in human-computer interactions and art will be explored. 
+
+%To guide the future research in this area, I will develop a framework for such dynamic wearable devices in this thesis. I hope this thesis will enable a new way to look at wearable devices as roaming autonomous robots akin to symbiotic insects and create a new frontier for medical systems.
+\end{abstractpage}
+
+\reader{Canan Dagdeviren}{Assistant Professor}{MIT Media Lab}
+\reader{Aaron Parness}{Robotics Engineer}{Jet Propulsion laboratory}
+
+\readerpage
+
+\cleardoublepage
+
+% Additional copy: start a new page, and reset the page number.  This way,
+% the second copy of the abstract is not counted as separate pages.
+% Uncomment the next 6 lines if you need two copies of the abstract
+% page.
+% \setcounter{page}{\thesavepage}
+% \begin{abstractpage}
+% \input{abstract}
+% \end{abstractpage}
+
+\cleardoublepage
+
+\section*{Acknowledgments}
+The path to my thesis had been supported by many people along the way.
+
+My advisor Joe Paradiso for continuous support, encouragement to do novel research, and wise advice during my years at the Media Lab.
+
+My thesis committee Canan Dagdeviren and Aaron Parness for inspiration, great advise, and support.
+
+My research collaborators during my time at the Media Lab, who contributed significantly to this thesis and my research directions. Inrak Choi for sharing his amazing mechanical engineering skills. Inrak's advise on mechanisms essential for Rovables and SkinBot projects.  Sean Follmer for his great insights into the HCI field and helping to frame the concept of wearable robots. Javier Hernandez for continuous support and encouragement in the SkinBot project, even after resubmitting the paper four times. Cindy Kao for providing different perspectives, and help in the Rovables Project. Christian Holz for teaching me rigorous data analysis. Alice Hong for helping with many aspects of Epidermal robots. Also, my collaborators with who I worked on other projects: Judith Amores, Ken Nakagaki, Hiroshi Ishii, Chris Schmandt, Jifei Ou, and Jie Qi
+
+My colleagues at the Responsive Environments Group. Clemont Duhart, Nan Zhao, Bryan Mayton, Gershon Dublon, Nan-Wei Gong, Mark Feldmayer, Katia Vega, Donald Derek Haddad, Spencer Russell, Robert Richer,  Amna Carriero, and others. 
+
+Many other friends at the Media Lab who gave me a lot of advice and feedback. Sang-Wong Leigh, Lining Yao, and Irmandy Wicaksono. 
+
+The undergraduate students who helped me with the research: Rianna Jitosho, Viktor Urvantsev, Justina R Yang, Gregory Young, Diana Lamaute, Lucas Santana and Kyle Joba-Woodruff. 
+
+My previous mentors. Alexander Gorbach for introducing me to research by giving me a chance to work at NIH. Joshua Smith for being a kind mentor and advisor at the University of Washington during my masters. Steve Hodges and Stuart Taylor for introducing me to human-computer interactions during my internship at Microsoft Research. Bunnie Huang for introducing the manufacturing world in China. Alanson Sample for teaching me many things about electrical engineering. 
+
+My family and friends for supporting me. Sergey Dementyev, Yulia Dementyeva, Vlada Dementyeva, and Tammy Lan.
+
